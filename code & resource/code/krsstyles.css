@@ -1,0 +1,241 @@
+/*to remove gap on all side*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*-----------------------------*/
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    color: rgba(0, 0, 0, 1);
+}
+
+/*-----------------------------*/
+
+.container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 160px repeat(5, 1fr);
+    grid-template-rows: 160px 300px 40px 200px 700px 100px;
+    gap: 5px;
+}
+
+/*-----------------------------*/
+
+.myphoto {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+    width: 150px;
+    border-radius: 100%;
+}
+
+/*-----------------------------*/
+
+.studprofile {
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-bottom: 1px solid black;
+}
+
+.studprofile h1 {
+    font-size: 30px;
+    margin-top: 35px;
+}
+
+.studprofile h2{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/*-----------------------------*/
+
+.studbio {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.bio {
+    width: 95%;
+    margin-top: 110px;
+}
+
+.bio th {
+    text-align: left;
+}
+
+/*-----------------------------*/
+
+.studkrs {
+    grid-column-start: 4;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.krs {
+    width: 98%;
+    margin-top: 10px;
+}
+
+.krs caption {
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.krs, .krs th, .krs td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 3px;
+    text-align: center;
+}
+
+.krs th {
+    background: lightgray;
+}
+
+.krs tr:nth-child(even) {
+    background: lightblue;
+}
+
+/*-----------------------------*/
+
+.text_above_prof {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.text_above_prof p {
+    margin-top: 8px;
+}
+
+/*-----------------------------*/
+
+.moreprof {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 5;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 150px;
+}
+
+.prof1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.prof2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.prof3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.prof4 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.prof5 {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.prof1:hover, .prof2:hover, .prof3:hover, .prof4:hover, .prof5:hover {
+    background: lightcyan;
+}
+
+.moreprof img {
+    margin-top: 25px;
+    width: 130px;
+}
+
+.etcuser {
+    text-decoration: none;
+    font-style: normal;
+    color: black;
+}
+
+/*-----------------------------*/
+
+.studkhs {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+.khs {
+    margin-top: 30px;
+    width: 98%;
+    margin-bottom: 20px;
+}
+
+.khs caption {
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.khs, .khs th, .khs td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 3px;
+    text-align: center;
+}
+
+.khs th {
+    background: lightgray;
+}
+
+.khs tr:nth-child(even) {
+    background: lightblue;
+}
+
+.studkhs p {
+    margin-left: 1%;
+    padding-bottom: 5px;
+}
+
+/*-----------------------------*/
+
+.recommend {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 6;
+    grid-row-end: 7;
+
+    display: grid;
+    grid-template-rows: 20px;
+}
+
+.recommend p {
+    margin-left: 1%;
+    text-align: justify;
+}
